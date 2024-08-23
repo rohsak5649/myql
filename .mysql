@@ -1,0 +1,12 @@
+SELECT * 
+FROM students 
+WHERE class != 'Final Year' 
+AND (cgpa > 8.0 
+OR city LIKE 'B%');
+
+SELECT * 
+FROM students 
+WHERE (class = 'First Year' 
+OR class = 'Second Year') 
+AND city NOT IN ('Pune', 'Mumbai') 
+AND cgpa >= 7.5;
